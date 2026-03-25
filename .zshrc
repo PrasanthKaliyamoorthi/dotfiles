@@ -145,7 +145,7 @@ paste <(pokego -r 1-8 "$(echo -e "$pokeColor")" ) <(cal|lolcat -f ) | column -s 
 export PATH=$PATH:$HOME/go/bin
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
-# tnux
+# tmux
 #if command -v tmux >/dev/null 2>&1; then
 #  if [[ -t 1 ]] && [[ -z "$TMUX" ]]; then
 #    tmux has-session -t default 2>/dev/null
@@ -224,7 +224,7 @@ alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
 
 tmux-git-autofetch() {
 
-(/home/piero/.tmux/plugins/tmux-git-autofetch/git-autofetch.tmux --current &)
+(~/.tmux/plugins/tmux-git-autofetch/git-autofetch.tmux --current &)
 
 }
 add-zsh-hook chpwd tmux-git-autofetch

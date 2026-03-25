@@ -1,0 +1,7 @@
+include /usr/share/nano/*.nanorc
+
+set linenumbers
+set mouse
+set softwrap
+set tabsize 4
+
